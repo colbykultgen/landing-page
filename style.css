@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* variables */
+
+:root {
+    --black-color: #000000;
+    --primary-color: #243042;
+    --light-color: #DCEDFF;
+    --white-color: #ffffff;
+    --accent-color: #FAA916;
+    --poppins-font: 'Poppins', sans-serif;
+    --box-shadow: 0 0 15px 2px rga(0, 0, 0, 0.2)!important;
+}
+
+/* resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: auto;
+    font-family: var(--poppins-font);
+    background-color: var(--primary-color);
+}
+
+section {
+    /* width: 80%; */
+    /* max-width: 1200px; */
+    margin: auto;
+}
+
+main {
+    background-color: var(--white-color);
+}
+
+img {
+    width: 100%;
+    display: block;
+
+}
+
+
+/* header */
+
+
+header {
+    background-color: var(--primary-color);
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* pinned-bar */
+
+
+a {
+    color: var(--white-color);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+.pinned-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.header-links {
+    margin: 0 50px;
+    margin-top: 10px;
+}
+
+.link {
+    margin-left: 50px;
+}
+
+
+/* banner */
+
+
+.banner {
+    margin-top: 100px;
+    display: flex;  
+    margin-bottom: 100px;  
+}
+
+.left-container {
+    margin-left: 50px;
+
+}
+
+.left-container h1{
+    font-size: 60px;
+    line-height: 70px;
+    color: var(--white-color);
+}
+
+.left-container p{
+    color: var(--light-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* button */
+
+.btn, button{
+    border: none;
+    cursor: pointer;
+}
+.btn{
+    padding: 10px 50px;
+    font-size: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: var(--accent-color);
+    font-weight: 500;
+    box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
+    transition: var(--transition);
+}
+
+
+.btn:hover{
+    box-shadow: var(--box-shadow);
+    background-color: var(--white-color);
+    color: #000000;
+    transition: 0.3s;
+}
+
+.right-container {
+    display: flex;;
+}
+
+.right-container img{
+    /* align-self: center; */
+    width: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10%;
+    box-shadow: rgba(197, 197, 197, 0.2) 0px 7px 29px 0px;
+}
+
+.portfolio {
+    background-color: var(--white-color);
+    padding-bottom: 60px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.portfolio h1 {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 20px;
+}
+
+.img1, .img2, .img3, .img4 {
+    margin: 0px 20px;  
+    
+}
+
+.image1, .image2, .image3, .image4 {
+    border: 3px solid var(--primary-color);
+    border-radius: 10%;
+}
+
+img:hover {
+    /* box-shadow: rgba(105, 105, 105, 0.2) 0px 7px 29px 0px; */
+    transition: 0.5s;
+    transform: scale(103%)
+
+}
+
+figcaption {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+/* quote section */
+
+.quote {
+    background-color: #DCEDFF;
+    width: 100%;
+}
+
+.quote-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    max-width: 1000px;
+    text-align: center;
+    padding: 100px;
+    padding-top: 120px;
+}
+
+.quotetext {
+    font-size: 28px;
+    font-style: italic;
+    text-align: left;
+}
+
+.author {
+    font-size: 22px;
+    text-align: right;
+    font-weight: 700;
+    margin-right: 25px;
+}
+
+.footer p {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--light-color);
+
+}
+
+.footer {
+    background-color: var(--primary-color);
+}
+
+
+/* cta section */
+
+.cta {
+    margin-top: 70px;
+    margin-bottom: 70px;
+   
+}
+
+.cta-container {
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--accent-color);
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+
+}
+
+
+.cta-left-container h3{
+    color: var(--white-color);
+}
+
+.btn-cta{
+    /* padding: 10px 50px; */
+    font-size: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: var(--accent-color);
+    font-weight: 500;
+    box-shadow: none;
+    border: 2px solid var(--white-color);
+    transition: var(--transition);
+}
